@@ -1,0 +1,14 @@
+<view class="container">
+<scroll-view scroll-y="true" style="height: {{scrollHeight}}px;" bindscrolltolower="bindDownLoad">
+  
+  <view>
+    <block wx:for="{{data.result.data}}">
+        <view class="item-joke">
+            <image src="{{item.url}}" mode="aspectFill"></image>
+            <text>{{item.content}}</text>
+        </view>
+    </block>
+        <text hidden="{{loadMore}}"> 加载更多数据...</text>
+    </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,7 @@
+<view class="container">
+    <block wx:for="{{data.result.data}}">
+        <view class="item-joke">
+            <text>{{item.content}}</text>
+        </view>
+    </block>
+</view>
